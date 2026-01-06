@@ -35,13 +35,13 @@ The binary will be generated at: ./target/release/esteganografia
       --file "./secret.pdf" \
       --output-dir "./output_folder" \
       --password "YourStrongPass" \
-      --bits 2
+    
 [ 2 ] GENERATE DECOYS (MAKE IT NOISY) 🎭 Floods the folder with fake files to hide the real chain. Crucial for Plausible Deniability.
 
   $ ./target/release/esteganografia decoys \
       --input-dir "./clean_images" \
       --output-dir "./output_folder" \
-      --bits 2
+    
 [ 3 ] SCAN & RECOVER (FIND THE NEEDLE) 📡 If you have a folder with 1000 random images and don't know where the chain starts, this mode attempts to decrypt headers until it finds "Sequence: 0".
 
   $ ./target/release/esteganografia scan \
